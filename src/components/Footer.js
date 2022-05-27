@@ -1,18 +1,12 @@
 import { Component } from 'react';
-import FormText from '../form/FormText';
 import FormTextArea from '../form/FormTextArea';
-import FullButton from '../form/FullButton';
-import ChatFormImg from './ChatFormImg';
-import SendChatBtn from '../form/SendChatBtn';
 import * as Yup from 'yup';
 import MyForm from '../form/Form';
 import { BindThis } from 'des-utilities';
 import { CallParentMethod } from 'des-utilities';
 // import 'emoji-mart/css/emoji-mart.css'
-import { Picker } from 'emoji-mart';
-import { MyConfig } from '../../MyConfig';
 
-export default class ChatBoxFooter extends Component {
+export default class Footer extends Component {
   constructor(props) {
     super(props);
 
@@ -35,7 +29,7 @@ export default class ChatBoxFooter extends Component {
             receiver_id: this.props.user.id,
           }}
         >
-          <label htmlFor="chat" className="sr-only">Your message</label>
+          <label htmlFor="list" className="sr-only">Your message</label>
           <div className="flex items-center py-1 px-2 bg-gray-50 rounded-lg dark:bg-gray-700 sm:space-x-2">
             <div className="flex flex-col sm:flex-row">
               <button type="button" className="inline-flex justify-center p-1 text-gray-500 rounded-lg cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">

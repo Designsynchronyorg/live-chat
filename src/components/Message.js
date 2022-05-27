@@ -2,9 +2,8 @@
 import { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import Avatar from '../features/Avatar';
-import SvgIcon from 'des-svg-icons';
 
-export default class ChatMessage extends Component {
+export default class Message extends Component {
     constructor(props) {
         super(props);
 
