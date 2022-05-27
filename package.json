@@ -1,20 +1,26 @@
 {
-  "name": "des-package-defaults",
-  "version": "1.0.4",
-  "description": "Npm package development template",
+  "name": "des-live-chat",
+  "version": "1.0.1",
+  "description": "Live chat functionalities for web apps",
   "main": "dist/index.js",
   "scripts": {
     "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/designsynchrony/des-package-defaults.git"
+    "url": "https://github.com/designsynchrony/des-live-chat.git"
   },
   "keywords": [
-    "package",
-    "dev",
-    "development",
-    "npm"
+    "chat with clients",
+    "chat with friends",
+    "chat with subscribers",
+    "customer service chat",
+    "chat with students",
+    "chat with teacher",
+    "chat with investors",
+    "chat with other countries",
+    "chat with your branch companies",
+    "have a chat meeting"
   ],
   "author": "Design Synchrony",
   "license": "MIT",
@@ -28,8 +34,15 @@
     "webpack": "^4.46.0",
     "webpack-cli": "^4.9.2"
   },
-  "bugs": {
-    "url": "https://github.com/designsynchrony/des-package-defaults/issues"
+  "dependencies": {
+    "des-utilities": "^1.0.4",
+    "yup": "^0.32.11",
+    "react-router-dom": "^6.3.0",
+    "des-svg-icons": "^1.0.1",
+    "des-http-processor": "^1.0.0"
   },
-  "homepage": "https://github.com/designsynchrony/des-package-defaults"
+  "bugs": {
+    "url": "https://github.com/designsynchrony/des-live-chat/issues"
+  },
+  "homepage": "https://github.com/designsynchrony/des-live-chat"
 }
