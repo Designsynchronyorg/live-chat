@@ -4,8 +4,12 @@ import * as Yup from "yup";
 import MyForm from "./Form";
 import { BindThis } from "des-utilities";
 import { CallParentMethod } from "des-utilities";
-import { MyConfig } from "./MyConfig";
+// import { MyConfig } from "./MyConfig";
 // import 'emoji-mart/css/emoji-mart.css'
+
+let MyConfig: { apiUrl: string } = {
+  apiUrl: "",
+};
 
 export default class Footer extends Component<any, any> {
   constructor(props: any) {
