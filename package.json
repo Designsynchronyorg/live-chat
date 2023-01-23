@@ -1,15 +1,20 @@
 {
-  "name": "des-live-chat",
-  "version": "1.0.1",
+  "name": "des-live-chat-v2",
+  "version": "2.0.0",
   "description": "Live chat functionalities for web apps",
-  "main": "dist/index.js",
+  "main": "dist/esm/index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/designsynchrony/des-live-chat.git"
   },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "keywords": [
     "chat with clients",
     "chat with friends",
@@ -28,18 +33,24 @@
     "@babel/core": "^7.17.12",
     "@babel/preset-env": "^7.17.12",
     "@babel/preset-react": "^7.17.12",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
     "babel-loader": "^8.2.5",
     "css-loader": "^3.3.0",
     "style-loader": "^1.0.1",
+    "tslib": "^2.4.1",
     "webpack": "^4.46.0",
     "webpack-cli": "^4.9.2"
   },
   "dependencies": {
-    "des-utilities": "^1.0.4",
-    "yup": "^0.32.11",
-    "react-router-dom": "^6.3.0",
+    "axios": "^0.26.1",
+    "des-http-processor": "^1.0.0",
     "des-svg-icons": "^1.0.1",
-    "des-http-processor": "^1.0.0"
+    "des-utilities": "^1.0.4",
+    "react-router-dom": "^6.3.0",
+    "yup": "^0.32.11",
+    "formik": "^2.2.9",
+    "react-toastify": "^9.1.1"
   },
   "bugs": {
     "url": "https://github.com/designsynchrony/des-live-chat/issues"
